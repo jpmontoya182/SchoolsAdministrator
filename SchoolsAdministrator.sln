@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolsAdministrator.Web", "SchoolsAdministrator.Web\SchoolsAdministrator.Web.csproj", "{7B8CCBE9-ED94-4AA3-BBF2-9BDED08275FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolsAdministrator.Web", "SchoolsAdministrator.Web\SchoolsAdministrator.Web.csproj", "{7B8CCBE9-ED94-4AA3-BBF2-9BDED08275FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolsAdministrator.Core", "SchoolsAdministrator.Core\SchoolsAdministrator.Core.csproj", "{01FE5DB3-93C6-4DE9-9E6D-662E6BD5682E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolsAdministrator.Core", "SchoolsAdministrator.Core\SchoolsAdministrator.Core.csproj", "{01FE5DB3-93C6-4DE9-9E6D-662E6BD5682E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolsAdministrator.Services", "SchoolsAdministrator.Services\SchoolsAdministrator.Services.csproj", "{9B4A8DDA-7C9C-46E6-A538-88F6BDA0D719}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolsAdministrator.Services", "SchoolsAdministrator.Services\SchoolsAdministrator.Services.csproj", "{9B4A8DDA-7C9C-46E6-A538-88F6BDA0D719}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolsAdministrator.Infrastructure", "SchoolsAdministrator.Infrastructure\SchoolsAdministrator.Infrastructure.csproj", "{5588BEF9-5C6F-4E37-9A42-E6EEA84B61E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolsAdministrator.Infrastructure", "SchoolsAdministrator.Infrastructure\SchoolsAdministrator.Infrastructure.csproj", "{5588BEF9-5C6F-4E37-9A42-E6EEA84B61E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{26557901-0CC7-48D7-9523-99398A4C850B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7B8CCBE9-ED94-4AA3-BBF2-9BDED08275FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +38,11 @@ Global
 		{5588BEF9-5C6F-4E37-9A42-E6EEA84B61E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5588BEF9-5C6F-4E37-9A42-E6EEA84B61E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5588BEF9-5C6F-4E37-9A42-E6EEA84B61E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AD8F8DB3-F235-4CC2-974D-AA42E9D7BBAA}
 	EndGlobalSection
 EndGlobal
