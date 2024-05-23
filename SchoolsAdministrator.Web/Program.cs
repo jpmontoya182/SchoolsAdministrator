@@ -1,9 +1,26 @@
+using SchoolsAdministrator.Core.Interfaces;
+using SchoolsAdministrator.Core.Interfaces.Repositories;
+using SchoolsAdministrator.Infrastructure.Data;
+using SchoolsAdministrator.Infrastructure.Repositories;
+using SchoolsAdministrator.Infrastructure;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
+builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+builder.Services.AddScoped(typeof(ISchoolRepository), typeof(SchoolRepository));
+builder.Services.AddScoped(typeof(IClassroomRepository), typeof(ClassroomRepository));
+
+
+/// **** Injecting Dependencies ****
+builder.Services.AddPersistence(builder.Configuration);
+/// ****
 
 var app = builder.Build();
 
